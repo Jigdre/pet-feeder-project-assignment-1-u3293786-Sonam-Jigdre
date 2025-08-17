@@ -1,0 +1,19 @@
+System ON
+Repeat while the feeder is on:
+    Check the current time.
+    If the time matches a feeding time(current time=feed time):
+            Check if the food container has food.
+            If the container is empty(% of food in storage container < % threshold):
+                    Notify staff.
+            Else:
+                    Check if the bowl already has food.
+                    If it does(bowl weight >= expected bowl weight with food):
+                            Alert staff.
+                    Else:
+                            Activate servo motor to dispense the correct portion of food.
+                            Wait 10 minutes.
+                            Check if the pet has eaten.
+                            If the pet did not eat(Bowl weight before=Bowl weight after):
+                                    Alert staff.
+End
+
