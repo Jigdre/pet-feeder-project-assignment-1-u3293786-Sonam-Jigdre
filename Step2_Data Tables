@@ -1,0 +1,11 @@
+| Variables                           | Type   | Units                   | Notes                                                                       |
+|-------------------------------------|--------|------------------------|------------------------------------------------------------------------------|
+| Feeding time data                   | Input  | hh:mm                  |                                                                              |
+| Current time                        | Input  | hh:mm                  |                                                                              |
+| Bowl weight sensor                  | Input  | Grams (g)              |                                                                              |
+| Food storage container level sensor | Input  | % of container         |                                                                              |
+| Before fill bowl weight             | Input  | g                      |                                                                              |
+| After fill bowl weight              | Input  | g                      |                                                                              |
+| Servo motor rotation                | Output | Rpm, degrees           | Doesn’t need to rotate constantly, just to a certain angle to dispense food. |
+| Notification sent                   | Output | LED or buzzer          |                                                                              |
+| Food weight monitoring data         | Output | g                      | Monitors increase or decrease in weight of bowl                              |
