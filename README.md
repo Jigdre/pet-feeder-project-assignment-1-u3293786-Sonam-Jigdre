@@ -1,1 +1,2 @@
 # pet-feeder-project-assignment-1-u3293786-Sonam-Jigdre
+#This system dispenses food to pets at scheduled times while monitoring the food bin and bowl. It checks if the bin has enough food and whether the bowl is empty before dispensing the correct portion. After feeding, it verifies if the pet has eaten and alerts staff if the pet does not eat, if the bowl already has food, or if the food container is empty. The system ensures timely feeding, prevents overfeeding, and notifies staff of any issues.
