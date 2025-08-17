@@ -1,0 +1,57 @@
+1. Pet eats as expected
+Scenario:
+•	Time matches feeding time.
+•	Food container has enough food.
+•	Bowl is empty.
+•	Pet eats the food.
+Logic:
+1.	Time = feed time → yes
+2.	Food container % > threshold → yes
+3.	Bowl empty → yes
+4.	Dispense food → yes
+5.	Wait 10 min → check if pet ate → yes
+6.	No alerts sent.
+•	Output: Normal operation, no staff alert.
+
+
+2. Pet does not eat
+Scenario:
+•	Time matches feeding time.
+•	Food container has food.
+•	Bowl is empty.
+•	Pet does not eat.
+Logic:
+1.	Time = feed time → yes
+2.	Food container % > threshold → yes
+3.	Bowl empty → yes
+4.	Dispense food → yes
+5.	Wait 10 min → check if pet ate → no
+6.	Alert staff.
+•	Output: Staff receives an alert: “Pet did not eat.”
+
+
+3. Food container is empty
+Scenario:
+•	Time matches feeding time.
+•	Food container is below threshold.
+Logic:
+1.	Time = feed time → yes
+2.	Food container % < threshold → yes
+3.	Notify staff. 
+4.	No food is dispensed.
+•	Output: Staff receives an alert: “Food container empty / refill required.”
+
+
+4. Bowl already has food
+Scenario:
+•	Time matches feeding time.
+•	Food container has food.
+•	Bowl already has food (weight >= expected portion).
+Logic:
+1.	Time = feed time → yes
+2.	Food container % > threshold → yes
+3.	Bowl weight >= expected → yes
+4.	Alert staff. 
+•	Output: Staff receives an alert: “Bowl already has food.”
+
+
