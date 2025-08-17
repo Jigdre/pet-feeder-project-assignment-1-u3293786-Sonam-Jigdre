@@ -1,0 +1,38 @@
+The local animal shelter needs a low-cost, programmable automated pet feeder that dispenses food at scheduled times, monitors if the food is eaten (or how much is eaten), and alerts staff in case of an issue. The solution needs to work with low-cost components.
+Features
+1.	Scheduled Feeding – Set and store feeding times (e.g., 8:00 AM and 6:00 PM).
+2.	Portion Control – Dispense appropriate amount of food for cats and dogs.
+3.	Food Weight Monitoring – Detect whether the food was eaten (and how much).
+4.	Alert System – Notify staff if:
+-	Food wasn’t dispensed
+-	Food wasn’t eaten
+-	Food storage container is empty.
+5.	Low-cost– Designed for cheap hardware components.
+
+Inputs
+1.	Feeding time data
+2.	Current time
+3.	Bowl weight sensor (To measure weight food in pets bowl)
+4.	Food storage container level sensor (to check how much food there is)
+5.	Before fill bowl weight
+6.	After fill bowl weight
+7.	Clock
+8.	Manual refilling of food container
+
+Outputs
+1.	Rotation of servo motor to dispense food
+2.	Notification to staff if:
+-	Food wasn’t dispensed
+-	Food wasn’t eaten
+-	Food storage container is empty
+3.	Food weight monitoring data
+Assumptions
+-	Different feeders for dogs and cats
+-	Weight sensor under the bowl can detect changes accurately
+-	Real-time clock available for scheduling
+Limitations
+-	Limited memory/storage on the microcontroller
+-	Only cheap hardware available leading to other limitations:
+o	Sensor not being very accurate
+o	May have errors while notifying staff due to network
+o	Power supply may be disrupted easily
